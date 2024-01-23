@@ -25,14 +25,14 @@ export const Table = ({
         row.push(
           <div
             key={`${i}-${j}`}
-            className={`border border-gray-600 p-4 w-20 h-20 flex-none flex items-center justify-center ${
-              isRobotCookieSamePosition ? "bg-green-700" : ""
-            } ${
+            className={`border border-gray-600 p-4 w-20 h-20 flex-none flex items-center justify-center  ${
               isRobot
                 ? "bg-blue-500 text-white"
                 : isCookie
                 ? "bg-yellow-500 text-white"
                 : ""
+            } ${
+              isRobotCookieSamePosition ? "bg-green-700 border-green-700" : ""
             }`}
           >
             {isRobotCookieSamePosition
